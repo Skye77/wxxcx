@@ -1,0 +1,12 @@
+<scroll-view class="coffee_body" scroll-y="true">
+	<view class="item" wx:for="{{coffee}}">
+		<view class="top">
+			<image class="locaIcon" src="{{item.locaIcon}}"/>
+			<text class="txt">{{item.location}}</text>
+			<image class="locaTime" src="{{item.locaTime}}"/>
+			<text class="txt">{{item.time}}</text>
+		</view>
+		<view class="mid">{{item.title}}</view>
+		<view class="bot">{{item.subTitle}}</view>
+	</view>
+</scroll-view>

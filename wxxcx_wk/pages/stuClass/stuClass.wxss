@@ -1,0 +1,43 @@
+.coffee_body{
+	display: flex;
+	flex:1;
+	flex-direction: column;
+	background-color: #F5F8FA;
+}
+.item{
+	padding: 26rpx;
+	background-color: #fff;
+	height: 180rpx;
+	margin-bottom: 10rpx;
+}
+.top{
+	color: #71B1F9;
+	flex:1;
+	height: 50rpx;
+	line-height: 50rpx;
+}
+.locaIcon,.locaTime{
+	height:50rpx;
+	width:50rpx;
+	vertical-align: middle;
+}
+.txt{
+	font-size:32rpx;
+	color: #71B1F9; 
+	margin-right: 40rpx;
+}
+.mid{
+	flex: 1;
+	font-size: 34rpx;
+	color: #333;
+	height:80rpx;
+	line-height:80rpx;
+	font-family: "Microsoft YaHei";
+}
+.bot{
+	flex: 1;
+	font-size: 32rpx;
+	color: #666;
+	height: 50rpx;
+	line-height: 50rpx;
+}

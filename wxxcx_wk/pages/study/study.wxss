@@ -1,0 +1,142 @@
+.study_body{
+	background-color: #F4F8FB;
+}
+.swiper-tab{  
+    width: 100%;    
+    text-align: center;  
+    line-height: 140rpx;
+    margin-bottom:30rpx; 
+}  
+.swiper-tab-list{  
+	font-size:36rpx;  
+    display: inline-block;  
+    width: 50%;  
+    color: #606060; 
+} 
+.swiper-tab-list:first-child{
+	 background: #fff url("../../images/bg1.png") no-repeat 25% center;
+} 
+.swiper-tab-list:last-child{
+	 background: #fff url("../../images/bg2.png") no-repeat 25% center;
+} 
+.on{ 
+	color: #5AA5FB; 
+	position: relative;
+}
+.on:after{
+	content: "";
+	height: 4rpx;
+	width:50%;
+	background-color: #5AA5FB;
+	position: absolute;
+	bottom: 0;
+	left: 16%;
+}
+.stuImg{
+	height:60rpx;
+	width:60rpx;
+	vertical-align: middle;
+}
+.swiper-box{ 
+	display: block; 
+	height: 100%; 
+}  
+.swiper-box view{  
+    text-align: center;  
+} 
+ .wei_body{
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	background-color: #F6FAFD;
+}
+.wei_body .item{
+	padding:20rpx; 
+	margin-bottom: 26rpx;
+	background-color: #fff;
+} 
+.wei_body .weiPic{
+	width: 100%;
+	height:276rpx;
+	position: relative;
+}
+.wei_body .wImg{
+	height: 100%;
+	width: 100%;
+}
+.wei_body .rightTop,.art_body .tit{
+	width: 180rpx;
+	height:60rpx;
+	background-color: #E0E5EB;
+	border-bottom-left-radius: 10rpx;
+	border-bottom-right-radius: 10rpx;
+	position: absolute;
+	top: 0;
+	right: 4%;
+	font-size: 32rpx;
+	line-height:60rpx;
+	text-align: center;
+	color: #93979A;
+}
+.wei_body .degree{
+	font-size: 32rpx;
+	color: #FFFFFD;
+	line-height:60rpx;
+	height:60rpx;
+	position: absolute;
+	bottom:0;
+	left:12%; 
+}
+.wei_body .degree:before{
+	content: "";
+	height:50rpx;
+	width:50rpx;
+	background-color: #C490C0;
+	border-radius: 50%;
+	position: absolute;
+	bottom:10rpx;
+	left:-60rpx;
+}
+.art_body{
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	background-color: #F4F8FB;
+}
+.art_body .item{
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	padding: 26rpx 30rpx;
+	background-color: #fff;
+	margin-bottom: 24rpx;
+}
+.art_body .titPic{
+	height:200rpx;
+	width:200rpx;
+	margin-left: 20rpx;
+}
+.stuTxt{
+	font-size: 32rpx;
+	line-height:50rpx;
+	color: #5C5C5C;
+	display: flex;
+	margin:20rpx auto 0;
+	text-align: left;
+}
+.etc{
+	display: flex;
+	font-size: 30rpx;
+	line-height: 70rpx;
+	height: 70rpx;
+	color: #CACACA
+} 
+.art_body .right{
+	position: relative;
+}
+.art_body .tit{
+	width: 100rpx;
+	height:40rpx;
+	line-height:40rpx;
+	right:24%;
+}

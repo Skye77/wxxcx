@@ -1,0 +1,8 @@
+{
+     "navigationBarBackgroundColor": "#373b3e",
+      "navigationBarTextStyle": "#fff",
+      "navigationBarTitleText": "添加个人标签",
+      "backgroundColor": "#eeeeee",
+      "backgroundTextStyle": "light",
+      "enablePullDownRefresh": false    
+}

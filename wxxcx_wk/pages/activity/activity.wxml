@@ -1,0 +1,20 @@
+<view class="warp">
+    <view class="header">
+        <view class="header_l">
+            <image src="../../images/course_icon.png"></image>
+            <text>上海 杨浦区</text>
+        </view>
+        <view class="header_r" bindtap="toChoAciv">
+            <image src="../../images/icon2_03.jpg"></image>
+            <text>组织活动</text>
+        </view>
+    </view>
+    <view class="flex-wrp banner" style="flex-direction:column;margin-top:2rpx">
+            <view class="flex-item top">暂时没有即将要开始的活动</view>
+            <view class="flex-item mid"><image src="../../images/bg_03.jpg"></image></view>
+            <view class="flex-item bom">不过，你可以根据自己的需求组织一个线下活动我们将为你安排老师，解答你的难题(不收取任何费用)</view>
+        </view>
+        <view class="foot">
+            <span>查看历史课程</span>
+        </view>
+</view>

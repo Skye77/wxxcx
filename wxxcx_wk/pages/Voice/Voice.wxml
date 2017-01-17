@@ -1,0 +1,165 @@
+
+<!--logs.wxml-->
+<scroll-view class="bj">
+  <view class="section tc">
+  <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" binderror="videoErrorCallback"  enable-danmu danmu-btn controls ></video>
+  <view class="btn-area">
+  <form bindreset="sendMessage">
+    <input placeholder="请输入弹幕" bindblur="bindInputBlur"/>
+    <button bindtap="bindSendDanmu" form-type="reset">发送弹幕</button>
+    </form>
+  </view>
+
+</view>
+  <view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">课程介绍</view>
+    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">课时列表</view>
+    <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">问答记录</view>
+    <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">相关课程</view>
+  </view>
+  <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+    <swiper-item class="title">
+      <view>
+        <text>美国商科申请择校与文书技巧</text>
+      </view>
+      <view class="Course-label">
+        <text>课程标签:</text>
+        <span>{{ke.curriculum}}</span>  <span>{{ke.curriculum}}</span>  <span>{{ke.curriculum}}</span> 
+      </view>
+      <view class="Suitable-crowd">
+        <text>适合人群:</text>
+        <span>大二</span>  <span>大三</span>  <span>大四</span> 
+      </view>
+      <view>
+        <text class="introduce">介绍美国商科申请流程,分析商科学校的优势劣势实际案例分析文书写作</text>
+      </view>
+      <view>
+        <text class="introduce">老师名片,欢迎来撩....</text>
+      </view>
+      <view class="userinfo">
+        <image class="userinfo-avatar" src="../../images/touxiang2.png"></image>
+        <span>KAN kAN</span>  <span>美国斯坦福大学</span>  <span>幽默直率</span>  <span>直击学生的特点</span> 
+        <a><span>关注</span>  </a> 
+      </view>
+      <view class="encourage">
+        <text>你的鼓励是对我们最大的支持
+        </text>
+       
+      </view>
+      <view class="reward">
+       <text>赏</text>
+        <view class="yuan"><span></span><span></span><span></span></view>
+      </view>
+      <view class="zhan">
+         <ul>
+             <li>
+                <image wx:if="{{Zan.Zan}}" catchtap="ZanTap" src="../../images/zhan_03.jpg"></image>
+                <image wx:else  catchtap="ZanTap" src="../../images/zhan_04.png"></image>
+                <span>{{Zan.num}}</span>       
+             </li>
+             
+             <li></li>
+             <li><image src="../../images/zhan_06.jpg"></image><span>123</span></li>
+         </ul>
+      </view>
+      <view class="com" wx:for="{{com}}" >
+     
+          <view class="list2">
+           <image class="userinfo-avatar" src="../../images/touxiang2.png"></image> 
+             <ul>
+                <li class="name">{{item.name}}</li>
+                <li></li>
+                <li class="name">{{item.University}}</li>
+                <li></li>
+                <li class="name">{{item.subject}}<span>{{item.lou}}-{{item.time}}</span> </li> 
+             </ul>
+              <view>
+                <text class="jieshao">{{item.article}}</text>
+              </view>
+              <view class="shou">
+                <text class="i"><span></span>小助手回复</text>
+                <image  data-index="{{item.index}}" wx:if="{{item.zhan}}"  catchtap="zhanTap"  src="{{item.image}}"></image>
+                <image  data-index="{{item.index}}" wx:else  catchtap="zhanTap"  src="{{item.image_ed}}"></image>
+              </view>
+                          
+          </view>
+    
+      </view>
+     
+    </swiper-item>
+
+
+    <swiper-item>
+      <view class="list" wx:for="{{item}}">
+        <ul>
+          <li>
+            <a>{{item.hour}}</a> 
+          </li>
+          <text>{{item.time}}`</text>
+        </ul>
+      </view>
+    </swiper-item>
+
+ 
+    <swiper-item>
+      <view class="com bg" wx:for="{{com}}">
+     
+          <view class="list2">
+           <image class="userinfo-avatar" src="../../images/touxiang2.png"></image> 
+             <ul>
+                <li class="name">{{item.name}}</li>
+                <li></li>
+                <li class="name">{{item.University}}</li>
+                <li></li>
+                <li class="name">{{item.subject}}<span>{{item.lou}}-{{item.time}}</span> </li> 
+             </ul>
+              <view>
+                <text class="jieshao">{{item.article}}</text>
+              </view>                                 
+          </view>
+    
+      </view>
+    </swiper-item>
+    
+    
+    <swiper-item>
+        <view class="baikuang">   
+          <swiper indicator-dots="{{indicatorDots}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for="{{imgUrls}}">
+              <swiper-item>
+                <image src="{{item}}" class="slide-image"/>
+              </swiper-item>
+            </block>
+         </swiper>
+          <span>主讲人</span>
+          </view>
+        <span class="Article">相关文章</span>
+
+    <swiper-item> 
+
+      <view class="list1" wx:for="{{art}}">
+        <ul>
+          <li>
+            <a>{{item.article}}</a> 
+          </li>
+          <span><image src="../../images/belt.png"/></span>
+        </ul>
+        <view class="comment">
+           <text>浏览{{item.browse}}</text>
+           <text>评论{{item.comment}}</text>
+           <text>喜欢{{item.love}}</text>
+           <text>打赏{{item.reward}}</text>
+        </view>
+        
+       
+        
+      </view>
+       
+</swiper-item>
+
+
+  </swiper-item>
+  </swiper>
+</scroll-view>
+ 

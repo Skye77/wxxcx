@@ -1,0 +1,10 @@
+<view class="warp">
+    <view class="flex-wrp banner" style="flex-direction:column;margin-top:2rpx">
+            <view class="flex-item top"><image src="../../images/bg_02.jpg"></image></view>
+            <view class="flex-item mid">亲爱的同学，你可以根据自己的需求创建一个线下活动，我们将为你安排老师，解答你的难题(不收取任何费用)</view>
+    </view>
+    <view class="flex-item list" wx:for="{{data}}">
+        <view class="flex-item list_title">{{item.title}}</view>
+        <view class="flex-item list_chapter">{{item.chapter}}</view>
+    </view>
+</view>

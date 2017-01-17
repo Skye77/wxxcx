@@ -1,0 +1,47 @@
+<view class="proson"> 
+	<view class="pro_hd" wx:for="{{infos}}">
+        <navigator url="../login/login" hover-class="navigator-hover">
+             <image class="proImg" src="{{item.idIcon}}"/>
+        </navigator>
+        <view class="prosonInfo">
+             <navigator url="../login/login" hover-class="navigator-hover">
+                    <text class="textCont">{{item.idPro}}\n</text>
+             </navigator>
+            <navigator url="../register/register" hover-class="navigator-hover">
+                    <text class="textSign">{{item.idRegister}}\n</text>
+             </navigator>
+        </view>
+        <view class="task" bindtap="modalTap">
+        	<image class="taskImg" src="../../images/task_03.png"/>\n
+        	<text style="font-size:28rpx; color: #686868;">任务</text>
+        	</view>
+	</view>
+
+	<view class="page_bd">
+		<block class="flex-wrp" wx:for="{{proSels}}">
+             <view class="flex-item" bindtap="modalTap">
+                <text class="proInfo">{{item.selCont}}</text>
+             </view>
+	    </block>
+    </view>
+
+    <view class="page_body">
+        <view class="widgets">
+            <block wx:for="{{lists}}" class="proBlock">
+                <view class="widgets_item" bindtap="modalTap">
+                    <view bindtap="widgetsToggle">
+                    	<image class="widgets_info-img" src="{{item.iconImg}}" mode="aspectFill" />
+                        <text class="widgets_info-name">{{item.name}}</text>
+                    </view>
+                </view>
+            </block>
+
+        </view>
+    </view>
+
+    <view class="page_tip">
+        <modal title="" confirm-text="去登录" cancel-text="暂不登录" hidden="{{modalHidden}}" mask bindconfirm="modalClear" bindcancel="modalChange">
+          登录后才能查看，确定登录吗？
+        </modal>
+    </view>
+</view>

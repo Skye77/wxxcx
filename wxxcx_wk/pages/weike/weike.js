@@ -1,0 +1,40 @@
+Page({
+	data:{
+		weikes:[
+			{
+				time:"11.25 18.30",
+				weikePic:"../../images/weikepic_03.jpg",
+				weikeTxt:"美国留学申请规划与文书技巧十讲美国留学申请规划与文书技巧十讲",
+				smallPic:"../../images/icon02.jpg",
+				name:"Ksgfgerd",
+				school:"美国斯坦福大学",
+				scan:"浏览54",
+				comment:"评论23",
+				like:"喜欢34",
+				reward:"打赏876"
+			},{
+				time:"11.25 18.30",
+				weikePic:"../../images/weikepic_03.jpg",
+				weikeTxt:"美国留学申请规划与文书技巧十讲美国留学申请规划与文书技巧十讲",
+				smallPic:"../../images/icon01.jpg",
+				name:"Ksgfgerd",
+				school:"美国斯坦福大学",
+				scan:"浏览54",
+				comment:"评论23",
+				like:"喜欢34",
+				reward:"打赏876"
+			},{
+				time:"11.25 18.30",
+				weikePic:"../../images/weikepic_03.jpg",
+				weikeTxt:"美国留学申请规划与文书技巧十讲美国留学申请规划与文书技巧十讲",
+				smallPic:"../../images/icon03.jpg",
+				name:"Ksgfgerd",
+				school:"美国斯坦福大学",
+				scan:"浏览54",
+				comment:"评论23",
+				like:"喜欢34",
+				reward:"打赏876"
+			}
+		]	
+	}
+})

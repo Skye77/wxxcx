@@ -1,0 +1,46 @@
+<view class="body_tj">
+    <view class="head_tj">
+        <text>{{hb1}}</text>
+        <a class="tiaoguo" plain type="default" bindtap="back">跳过</a>
+    </view>
+    <view class="chin">
+        <text class="mbgj">目标国家或地区</text>
+        <view class="sygj">
+            <radio-group class="radio-group" bindchange="radioChange">
+                <label class="guojia" wx:for="{{items}}">
+                    <image class="guojia_img" src="{{item.cityPic}}"></image>
+                    <text class="guojia_name">{{item.name}}</text>
+                    <radio class="radio" value="{{item.name}}" checked="{{item.checked}}"/>
+                </label>
+            </radio-group>
+        </view>
+    </view>
+
+    <view class="chin chin2">
+        <text class="mbgj">目标专业</text>
+        <view class="sygj">
+            <radio-group class="radio-group" bindchange="radioChange">
+                <label class="guojia" wx:for="{{subject}}">
+                    <image class="guojia_img" src="{{item.subPic}}"></image>
+                    <text class="guojia_name">{{item.sub}}</text>
+                    <radio class="radio" value="{{item.sub}}" checked="{{item.checked}}"/>
+                </label>
+            </radio-group>
+        </view>
+    </view>
+
+     <view class="chin chin3">
+        <text class="mbgj">申请学位</text>
+        <view class="sygj">
+            <radio-group class="radio-group" bindchange="radioChange">
+                <label class="guojia" wx:for="{{degree}}">
+                    <image class="guojia_img" src="{{item.degPic}}"></image>
+                    <text class="guojia_name">{{item.deg}}</text>
+                    <radio class="radio" value="{{item.deg}}" checked="{{item.checked}}"/>
+                </label>
+            </radio-group>
+        </view>
+    </view>
+    <button class="last_btn" bindtap="back">确定</button>
+    
+</view>

@@ -1,0 +1,46 @@
+<view class="proson"> 
+	<view class="pro_hd" wx:for="{{infos}}">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover" bindtap="modalTap"></image>
+        <view class="prosonInfo">
+            <text class="tetxCont userinfo-nickname" bindtap="modalTap">{{userInfo.nickName}}\n</text>
+        	<text style="font-size: 30rpx; color: #686868">{{item.idInfo}}\n</text>
+        	<image class="textImg" src="{{item.idPic01}}"/><image class="textImg" src="{{item.idPic02}}"/><image class="textImg" src="{{item.idPic03}}"/><image  class="textImg" src="{{item.idPic04}}"/>
+        </view>
+        <view class="task">
+        	<image class="taskImg" src="../../images/task_03.png"/>\n
+        	<text style="font-size:28rpx; color: #686868;">任务</text>
+        </view>
+	</view>
+
+    <view class="page_tip">
+        <modal title="" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" mask bindconfirm="modalClear" bindcancel="modalChange">
+          确定退出微信登录吗？
+        </modal>
+    </view>
+
+	<view class="page_bd">
+		<block class="flex-wrp" wx:for="{{proSels}}">
+             <view class="flex-item">
+                <navigator url="{{item.url}}" hover-class="navigator-hover">
+                    <text class="proInfo">{{item.selNum}}{{item.selCont}}</text>
+                </navigator>
+             </view>
+	    </block>
+    </view>
+
+    <view class="page_body">
+        <view class="widgets">
+            <block wx:for="{{lists}}" class="proBlock">
+                <view class="widgets_item">
+                    <navigator url="{{item.url}}" hover-class="navigator-hover">
+                        <view id="{{item.id}}" bindtap="widgetsToggle">
+                        	<image class="widgets_info-img" src="{{item.iconImg}}" mode="aspectFill" />
+                            <text class="widgets_info-name">{{item.name}}</text>
+                        </view>
+                    </navigator>
+                </view>
+            </block>
+
+        </view>
+    </view>
+</view>

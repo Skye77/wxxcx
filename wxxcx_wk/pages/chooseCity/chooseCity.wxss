@@ -1,0 +1,20 @@
+.box{
+    background-color: #f5f5f5;
+}
+.title{
+    line-height: 70rpx;
+    background-color: #f5f8fa;
+    padding-left: 30rpx;
+}
+.all{
+    line-height: 99rpx;
+    padding-left: 34rpx;
+    margin-bottom: 2rpx;
+    background: #ffffff;
+}
+.city{
+    line-height: 99rpx;
+    padding-left: 34rpx;
+    margin-bottom: 2rpx;
+    background: #ffffff;
+}

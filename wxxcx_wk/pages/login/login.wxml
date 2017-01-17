@@ -1,0 +1,39 @@
+
+<view class="container">
+    <text class="user-name">WELCOME　TO　5Ke</text>
+    <text class="user-myke">5Ke·我的课</text>
+    <view class="input_sj">
+        <view class="ip_name">
+            <image src="/images/01sy_03.png"></image>
+            账户名:<input type="text" class="loginInput" name="userName" placeholder="请输入用户名..." bindinput="userNameInput"></input>
+        </view>
+        <view class="ip_name">
+            <image src="/images/01sy_06.png"></image>
+            密　码:<input password type="text" class="loginInput" placeholder="请输入密码..." bindinput="passWdInput"></input>
+        </view>
+    </view>
+    <view class="dl">
+        <image class="bjt" src="/images/bj_03.jpg"></image>
+        <button class="denglu" bindtap="tipTap">确定登录</button>
+        <view class="selBtn">
+            <button class="kankan" bindtap="modalTap">暂不登录,回首页</button>
+            <button class="kankan" bindtap="regiTap">没有账号？去注册</button>
+        </view>
+        <button class="weixin" bindtap="wxLogin">微信号直接登录</button>
+    </view>
+
+    <!--登录信息不完善-->
+    <view class="page_tip" wx:if="{{userN.length == 0|| passW.length == 0}}">
+        <modal title="" confirm-text="确定" cancel-text="取消" hidden="{{tipHidden}}" mask bindconfirm="tipChange" bindcancel="tipChange">
+          温馨提示：用户名和密码不能为空！
+        </modal>
+    </view>
+    
+    <!-- 登录成功 -->
+    <view class="page_tip" wx:if="{{userN.length!=0 && passW.length!=0}}">
+        <modal title="" confirm-text="确定" cancel-text="取消" hidden="{{tipHidden}}" mask bindconfirm="loginTap" bindcancel="tipChange">
+          Hello，<span class="userN">{{userN}}</span> ！请确认登录
+        </modal>
+    </view>
+
+</view>

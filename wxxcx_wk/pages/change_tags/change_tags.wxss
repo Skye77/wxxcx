@@ -1,0 +1,149 @@
+page{
+    background-color: #fff;
+}
+.body_tj{
+    flex-direction: column;
+    align-items: center;
+}
+
+/*国家-----------*/
+.mbgj{
+    text-align: center;
+    line-height:128rpx;
+margin-left:255rpx;
+font-weight: bold;
+
+}
+.chin{
+    height: 980rpx;
+    border-bottom: 12rpx #f5f8fa solid;
+}
+.chin2{
+    height: 685rpx;
+}
+.chin3{
+    height: 445rpx;
+}
+.guojia{
+    float: left;
+    width: 162rpx;
+    height: 282rpx;
+    margin-left: 66rpx;
+    position: relative;
+}
+.radio{
+    position: absolute;
+    left:110rpx;
+    top:110rpx;
+}
+.guojia .guojia_img{
+    width: 160rpx;
+    height: 160rpx;
+}
+.guojia .guojia_name{
+    font-size:29rpx;
+    margin-left:54rpx;
+}
+.guojia .adly{
+   position: absolute;
+   left: 51rpx;
+   left:-34rpx;
+    top:174rpx;
+}
+
+.last_btn{
+    background-color: #4d9df7;
+    color:#fff;
+    border-radius: 0;
+}
+page{
+    background-color: #fff;
+}
+.body_tj{
+    flex-direction: column;
+    align-items: center;
+}
+.head_tj{
+    position: relative;
+    height: 150rpx;
+    border-bottom: 12rpx #f5f8fa solid;
+    line-height: 110rpx;
+}
+.head_tj text{
+    margin-left: 30rpx;
+    display: block;
+    font-size:32rpx;
+    color: #848484;
+    position: absolute;
+    top:26rpx;
+}
+.head_tj .tiaoguo{
+    width: 90rpx;
+    height: 37rpx;
+    font-size: 30rpx;
+    line-height: 37rpx;
+    text-align: center;
+    display: block;
+    border:1rpx #dcdcdc solid;
+    color: #dcdcdc;
+    position: absolute;
+    right:73rpx;
+    top:62rpx;
+    border-radius: 50rpx;
+}
+
+/*国家-----------*/
+.mbgj{
+    text-align: center;
+    line-height:128rpx;
+margin-left:255rpx;
+font-weight: bold;
+
+}
+.chin{
+    height: 980rpx;
+    border-bottom: 12rpx #f5f8fa solid;
+}
+.chin2{
+    height: 685rpx;
+}
+.chin3{
+    height: 445rpx;
+}
+.guojia{
+    float: left;
+    width: 162rpx;
+    height: 282rpx;
+    margin-left: 66rpx;
+    position: relative;
+}
+.radio{
+    position: absolute;
+    left:110rpx;
+    top:110rpx;
+}
+.guojia .guojia_img{
+    width: 160rpx;
+    height: 160rpx;
+}
+.guojia .guojia_name{
+    font-size:29rpx;
+    margin-left:54rpx;
+}
+.guojia .adly{
+   position: absolute;
+   left: 51rpx;
+   left:-34rpx;
+    top:174rpx;
+}
+
+.last_btn{
+    background-color: #4d9df7;
+    color:#fff;
+    border-radius: 0;
+}
+
+
+
+
+

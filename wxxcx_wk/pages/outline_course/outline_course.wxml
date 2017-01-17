@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="warp">
+    <view class="header">
+        <view class="header_l" bindtap="toCity">
+            <image src="../../images/course_icon.png"></image>
+            <text>上海 杨浦区</text>
+        </view>
+        <view class="header_r">
+            <image src="../../images/icon2_03.jpg"></image>
+            <text>发起课程</text>
+        </view>
+    </view>
+    <view class="list" wx:for="{{data}}">
+        <view class="content">
+            <view class="school">
+                <image src="../../images/icon03.png"></image>
+                <text>{{item.school}}</text>
+            </view>
+            <view class="time">
+                <image src="../../images/icon04.png"></image>
+                <text>{{item.time}}</text>
+            </view>
+            <span class="remand">{{item.remand}}</span>
+        </view>
+        <view class="flex-wrp" style="flex-direction:column;padding-top:32rpx">
+            <view class="flex-item title">{{item.title}}</view>
+            <view class="flex-item chapter">{{item.chapter}}</view>
+        </view>
+    </view>
+    <view class="foot">
+        <span>查看历史课程</span>
+    </view>
+</view>

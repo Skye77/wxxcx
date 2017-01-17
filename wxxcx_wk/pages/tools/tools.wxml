@@ -1,0 +1,16 @@
+<view id="tools">
+    <block wx:for="{{tools}}" wx:key="{{tools}}">
+        <view class="tools">
+            <view class="pic">
+                <image src="{{item.pic}}"></image>
+            </view>
+            
+            <view class="content">
+                <text class="h2">{{item.title}}</text>
+                <text class="text">{{item.text}}</text>
+            </view>
+            
+        </view>
+    </block>
+    
+</view>

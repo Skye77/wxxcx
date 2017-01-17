@@ -1,0 +1,91 @@
+/*个人信息*/
+.pro_hd{
+	height:250rpx;
+	display:flex;
+  align-items: center;
+  flex: 1;
+  flex-direction: row;
+}
+.proImg{ 
+	 height: 140rpx;
+	 width: 140rpx;
+	 border-radius: 50%;
+    margin-right: 8rpx;
+    margin-left: 23rpx;
+ }
+ .prosonInfo{ 
+    margin-left:26rpx;
+    flex: 1;
+  }
+  .textCont{
+    color: #686868;
+    margin-bottom:20rpx;
+    display: flex;
+  }
+  .textSign{
+    color:deeppink;
+    font-size:30rpx;
+    text-decoration: underline; 
+  }
+  .textImg{
+    height: 48rpx;
+    width: 48rpx;
+    border-radius: 2rpx;
+    display: inline-block;
+    margin:15rpx 7rpx 0;
+  }
+  .task{
+    text-align: center;
+    padding-right: 50rpx;
+  }
+  .taskImg{
+    display: block;
+    height: 46rpx;
+    width: 46rpx;
+    border-radius: 50%;
+    margin:0 auto;
+  }
+ /*选项*/
+ .page_bd{
+   height:130rpx;
+   display:flex;
+ }
+ .flex-wrp{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+ }
+ .flex-item{
+  width: 33.33%;
+  height:130rpx;
+  display: flex;
+  background-color: #F8F9FB;
+  justify-content: center;
+ }
+ .proInfo{
+ 	  font-size: 36rpx;
+  	color:#5E5E5E;
+ 	  text-align: center;
+  	line-height: 130rpx;
+ }
+ /*列表*/
+.widgets_item{
+    height:110rpx;
+	background-color:#FFFFFF;
+	border-bottom: 1rpx solid #ECECEC;
+	margin:0 25rpx;
+    display: flex;
+    align-items: center;
+    font-size:36rpx;
+    font-family: "microsoft YaHei";
+    color:#303030;
+}
+.widgets_info-img{
+	width: 44rpx;
+    height: 44rpx;
+    margin-right: 15rpx;
+    vertical-align: middle;
+}
+.widgets_item:nth-child(4){
+    border-bottom: 12rpx solid #F4F8FB;
+}

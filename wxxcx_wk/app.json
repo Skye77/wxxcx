@@ -1,0 +1,52 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/tools/tools",
+    "pages/mine/mine",
+    "pages/activity/activity",
+    "pages/chooseActivity/chooseActivity",
+    "pages/chooseCity/chooseCity",
+    "pages/outline_course/outline_course",
+    "pages/Voice/Voice",
+    "pages/proson/proson",
+    "pages/weike/weike",
+    "pages/coffee/coffee",
+    "pages/stuClass/stuClass",
+    "pages/study/study",
+    "pages/friend/friend",
+    "pages/loginProson/loginProson",
+    "pages/login/login",
+    "pages/change_tags/change_tags",
+    "pages/register/register",
+    "pages/register/Add_tags/Add_tags",
+    "pages/login/accountLogin/accountLogin"
+  ],
+  "window":{
+    "backgroundTextStyle":"bold",
+    "navigationBarBackgroundColor": "#373b3e",
+    "navigationBarTitleText": "微信公开课",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+        "list": [{
+          "pagePath": "pages/index/index",
+          "text": "微课",
+          "iconPath":"/images/首页微课入口.png",
+          "selectedIconPath": "/images/首页3微课蓝.png"
+        
+        }, {
+          "pagePath": "pages/tools/tools",
+          "text": "工具箱",
+          "iconPath":"../../images/首页3工具箱.png",
+          "selectedIconPath": "../../images/首页3工具箱蓝.png"
+        },{
+          "pagePath": "pages/proson/proson",
+          "text": "我的",
+          "iconPath":"../../images/首页3我的灰.png",
+          "selectedIconPath": "../../images/首页3我的蓝.png"
+        }],
+        "color":"#b5b5b5",
+        "selectedColor": "#4d9df7",
+        "borderStyle": "white"
+    }
+}

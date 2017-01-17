@@ -1,0 +1,68 @@
+.warp{
+  background-color: #f5f8fa;
+  overflow: hidden;
+}
+.header{
+  background-color: #fff;
+  padding-top:16rpx;
+  overflow: hidden;
+}
+.header_l{
+  padding-left: 24rpx;
+  float: left;
+}
+.header_l image{
+  width:40rpx;
+  height:40rpx;
+}
+.header_l text{
+  font-weight: bold;
+  line-height: 40rpx;
+  color: #666666;
+}
+.header_r{
+  float: right;
+  padding-right: 20rpx;
+}
+.header_r image{
+  width:40rpx;
+  height:40rpx;
+}
+.header_r text{
+  font-weight: bold;
+  line-height: 40rpx;
+  padding-left: 22rpx;
+  color: #666666;
+}
+.banner{
+    background-color: #fff;
+    text-align: center;
+}
+.banner .top{
+    padding: 136rpx 195rpx 93rpx 188rpx;
+    font-size: 14px;
+    color:#5d5d5d;
+    font-weight: bold;
+}
+.banner .mid image{
+    width: 252rpx;
+    height:313rpx;
+}
+.banner .bom{
+    padding: 68rpx 119rpx 0 88rpx;
+    font-size: 14px;
+    color:#5d5d5d;
+    font-weight: bold;
+}
+.foot{
+  height: 50rpx;
+  background-color: #fff;
+  text-align: center;
+  padding-top: 260rpx;
+}
+.foot span{
+  border-bottom: 1px solid #999999;
+  font-size: 16px;
+  color: #999999;
+  padding-bottom: 5rpx;
+}

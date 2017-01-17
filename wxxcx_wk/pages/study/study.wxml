@@ -1,0 +1,39 @@
+<view class="study_body">
+	<view class="swiper-tab">  
+	    <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">微课</view>  
+	    <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">文章</view>  
+	</view>  
+
+	<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">
+	    <swiper-item>  
+	      <scroll-view scroll-y="true" class="wei_body">
+	    	 <view class="item" wx:for="{{weikes}}"> 
+	    	 	<view class="weiPic">
+	    	 		<image class="wImg" src="{{item.stuPic}}"/>
+	    	 		<text class="rightTop">{{item.rightTop}}</text>
+					<text class="degree">{{item.degree}}</text>
+	    	 	</view>
+	    	 	<view>
+	    	 		<text class="stuTxt">{{item.stuTxt}}\n</text>
+	    	 		<text class="etc">{{item.scan}} {{item.comment}} {{item.like}} {{item.reward}}</text>
+	    	 	</view>	
+	    	 </view>  		
+	      </scroll-view>  
+	    </swiper-item>  
+
+	    <swiper-item>  
+	      <scroll-view scroll-y="true" class="art_body">
+	      	  <view class="item" wx:for="{{article}}">
+	      	  	  <view class="left">
+	      	  	  	 <text class="stuTxt" >{{item.artTxt}}\n</text>
+	      	  	  	 <text class="etc">{{item.scan}} {{item.comment}} {{item.like}} {{item.reward}}</text>
+	      	  	  </view>
+	      	  	  <view class="right">
+	      	  	  	<image class="titPic" src="{{item.artPic}}"/>
+	      	  	  	<text class="tit">{{item.artTop}}</text>
+	      	  	  </view>
+	      	  </view>	
+	      </scroll-view>
+	    </swiper-item>   
+	</swiper>  
+</view>

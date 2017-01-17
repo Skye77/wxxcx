@@ -1,0 +1,27 @@
+.banner{
+    padding-top: 134rpx;
+    text-align: center
+}
+.top image{
+    width:254rpx;
+    height:309rpx;
+}
+.mid{
+    padding: 99rpx 80rpx 89rpx 70rpx;
+    font-size: 14px;
+    color:#5d5d5d;
+    font-weight: bold;
+}
+.list{
+    margin:0 27rpx 17rpx 20rpx;
+    padding:40rpx 0 27rpx 40rpx;
+    background-color: #f5f8fa;
+}
+.list_title{
+    font-weight: bold;
+    margin-bottom: 30rpx
+}
+.list_chapter{
+    font-size: 14px;
+    color: #999999;
+}

@@ -1,0 +1,16 @@
+Page({
+	data:{
+		friends:[
+			{
+				friendIcon:"../../images/icon01.jpg",
+				name:"李小猫同学"
+			},{
+				friendIcon:"../../images/icon02.jpg",
+				name:"小航标同学"
+			},{
+				friendIcon:"../../images/icon03.jpg",
+				name:"张小韵同学"
+			}
+		]
+	}
+})

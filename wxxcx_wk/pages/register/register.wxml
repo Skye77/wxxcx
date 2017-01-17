@@ -1,0 +1,49 @@
+
+<view class="container">
+    <text class="user-name">WELCOME　TO　5Ke</text>
+    <text class="user-myke">5Ke·我的课</text>
+    <view class="input_sj">
+        <view class="ip_name">
+            <image src="/images/01sy_03.png"></image>
+            账户名:<input type="text" class="loginInput" name="userName" bindinput="userNameInput"></input>
+        </view>
+        <view class="ip_name">
+            <image src="/images/01sy_06.png"></image>
+            密　码:<input password type="text" class="loginInput" bindinput="passWdInput"></input>
+        </view>
+         <view class="ip_name telIn">
+            <image src="/images/01sy_08.png"></image>
+            手机号:<input type="text" class="loginInput" bindinput="telInput"></input>
+            <button class="button_fs" type="default" bindtap="fsTap">{{fs}}</button>
+        </view>
+         <view class="ip_name">
+            输入验证码:<input type="text" class="loginInput" bindinput="codeInput"></input>
+        </view>
+        <button class="addTags" bindtap="addTags">添加个人标签</button>
+    </view>
+    <view class="dl">
+        <image class="bjt" src="/images/bj_03.jpg"></image>
+        <button class="denglu" bindtap="tipTap">立即注册</button>
+        <button class="kankan" bindtap="modalTap">暂不注册,回首页</button>
+        <button class="weixin" bindtap="weixinTap">微信号直接登录</button>
+    </view>
+
+    <!--弹框:信息不完整-->
+    <view class="page_tip" wx:if="{{userN.length == 0|| passW.length == 0 || telN.length == 0|| codeN.length == 0}}">
+        <modal title="" confirm-text="确定" cancel-text="取消" hidden="{{tipHidden}}" mask bindconfirm="tipChange" bindcancel="tipChange">
+          注册信息不完整，请完善哦
+        </modal>
+    </view>
+    <!--弹框:注册成功-->
+    <view class="page_tip" wx:elif="{{userN.length != 0 && passW.length != 0 && telN.length != 0 && codeN.length != 0}}">
+        <modal title="" confirm-text="去登录" cancel-text="暂不登录" hidden="{{tipHidden}}" mask bindconfirm="registerClear" bindcancel="tipChange">
+          恭喜您！注册成功...
+        </modal>
+    </view>
+
+    <!--弹框:验证码已发送提醒-->
+    <view class="page_tip">
+        <modal title="" hidden="{{fsHidden}}"></modal>
+    </view>
+
+</view>

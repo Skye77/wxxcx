@@ -1,0 +1,146 @@
+<view id="nav_fix">
+    <image class="small_icon" src="/images/small_icon.png"></image>
+    <text style="color:#bcbebd; font-size:14px; vertical-alignn:middle;">航标360°</text>
+</view>
+
+<swiper indicator-dots="{{indicatorDots}}"  
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">  
+    <block wx:for="{{imgUrls}}" wx:key="{{url}}">  
+        <swiper-item>  
+            <navigator url="{{item.linkin}}" hover-class="navigator-hover">  
+                <image src="{{item.url}}" class="slide-image" width="355" height="150"/>  
+            </navigator>   
+        </swiper-item>  
+    </block>  
+</swiper> 
+
+<view id="nav">
+    <view id="subject_center" class="nav_block" >            
+        <image src="/images/首页微课入口.jpg" bindtap="Voice"></image>      
+        <text>课程中心</text>
+    </view>
+    
+    <view id="reading_center" class="nav_block" bindtap="shiyan">       
+        <image src="/images/reading_center.jpg"></image>
+        <text>阅读中心</text>
+    </view>
+    <view id="collection" class="nav_block" bindtap="shiyan">
+        <image src="/images/collection.jpg"></image>
+        <text>精品专辑</text>
+    </view>
+    <view id="s_team" class="nav_block" bindtap="shiyan">
+        <image src="/images/s_team.jpg"></image>
+        <text>线下活动</text>
+    </view>
+</view>
+
+<view id="header">
+    <image src="/images/首页2-微课.png"></image>
+    <text>课程推荐</text>
+</view>
+<block wx:for="{{subject}}" wx:key="{{subject}}">
+    <view id="subject">
+        <image src="{{item.background_img}}"></image>
+        <text class="center_messages">{{item.date}}开课 | 免费报名</text>
+        <text class="type">微信群课</text>
+        <view class="photo">
+            <image src="{{item.photo}}"></image>
+        </view>
+        <text class="privte_info">{{item.teacherName}}</text>
+        <view class="details">
+            <text>{{item.detials}}</text>
+            <a class="wenshu">·文书</a>
+            <a class="looked">浏览{{item.looked}}</a>
+            <a class="liked">喜欢{{item.liked}}</a>
+            <a class="comment">评论{{item.comment}}</a>
+            <a class="pay">打赏{{item.pay}}</a>
+            <a class="join" bindtap="tipTap">加入学习</a>
+        </view>
+    </view>
+</block>
+<view class = "more_suggest">
+    <a href="#" >更多推荐</a>
+</view>
+
+<view class="section">  
+    <view id="outline_course">
+        <image src="/images/首页-2线下课程.png"></image>
+        <text class="title">线下课程推荐</text>
+        <a class= "more" bindtap="outline" >更多</a>
+    </view>
+    <scroll-view class="scroll-view_H" scroll-x="true" style="width:100%">
+        <block wx:for="{{outline_subject}}" wx:key="{{outline_subject}}">
+            <view id="{{id}}" class="scroll-view-item_H">
+                <image class="item_bg" src="{{item.img}}"></image> 
+                <view class="content01">
+                    <image class="icon" src="/images/线下课程地点.png"></image>
+                    <text>{{item.adress}}</text>
+                    <image class="icon" src="/images/线下课程时间.png"></image>
+                    <text>{{item.time}}</text>
+                </view>
+                <view class="content02">
+                    {{item.text}}
+                </view>
+            </view>
+         </block>   
+    </scroll-view>
+</view>
+
+<view id="recommend_article">
+    <block wx:for="{{article}}" wx:key="{{article}}">
+        <view class="article">
+            <text>{{item.text}}</text>
+            <image src="{{item.img}}"></image>
+            <a class="wenshu">·文书</a>
+            <a class="looked">浏览{{item.looked}}</a>
+            <a class="liked">喜欢{{item.liked}}</a>
+            <a class="comment">评论{{item.comment}}</a>
+            <a class="pay">打赏{{item.pay}}</a>
+        </view>
+    </block>
+</view>
+
+
+    <!--加入学习提示-->
+    <!--<view class="page_tip" wx:if="{{userN.length == 0|| passW.length == 0}}">-->
+    <view class="page_tip">
+        <modal title="温馨提示" confirm-text="去登录" cancel-text="取消" hidden="{{tipHidden}}" mask bindconfirm="loginTap" bindcancel="tipChange">
+          登录后才能加入微课，确定登录吗？
+        </modal>
+    </view>
+
+    <!-- <action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+        <block wx:for="{{actionSheetItems}}">
+          <action-sheet-item class="item" bindtap="bind{{item}}">{{item}}</action-sheet-item>
+        </block>
+        <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+    </action-sheet> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

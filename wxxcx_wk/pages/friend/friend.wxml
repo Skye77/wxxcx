@@ -1,0 +1,11 @@
+<scroll-view class="friend_body" scroll-y="true">
+	<view class="item" wx:for="{{friends}}">
+		<image class="friendImg" src="{{item.friendIcon}}"/>
+		<view class="meta">
+			<text class="name">{{item.name}}</text>
+			<view class="body-view">
+        		<switch checked bindchange="switch1Change"/>
+      		</view>
+		</view>
+	</view>
+</scroll-view>

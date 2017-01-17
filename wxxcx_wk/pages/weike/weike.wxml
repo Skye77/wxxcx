@@ -1,0 +1,17 @@
+<scroll-view class="weike_body" scroll-y="true">
+	<view class="item" wx:for="{{weikes}}">
+		<view class="weikeTime">{{item.time}}\n</view>
+		<view class="weikeiInfo">
+			<image class="weikeImg" src="{{item.weikePic}}"/>
+			<view class="meta">
+				<text class="weikeTxt">{{item.weikeTxt}}</text>
+				<view>
+					<image class="smallPic" src="{{item.smallPic}}"/>
+					<text class="name">{{item.name}}</text>
+					<text class="school">{{item.school}}</text>
+				</view>
+				<view class="etc">{{item.scan}} {{item.comment}} {{item.like}} {{item.reward}}</view>
+			</view>
+		</view>
+	</view>
+</scroll-view>

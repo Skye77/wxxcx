@@ -1,0 +1,31 @@
+.friend_body{
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+}
+.item{
+	padding: 26rpx;
+	background-color: #fff;
+	height: 130rpx;
+	display: flex;
+	flex: 1;
+}
+.friendImg{
+	height: 100rpx;
+	width: 100rpx;
+	border-radius: 50%;
+	margin:auto;
+}
+.meta{
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	margin-left:10rpx;
+	line-height:130rpx;
+	font-size: 36rpx;
+	color: #333;  
+	border-bottom: 2rpx solid #ccc;
+}
+.name{
+	width: 80%;
+}

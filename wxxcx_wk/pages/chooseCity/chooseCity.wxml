@@ -1,0 +1,5 @@
+<view class="box">
+    <view class="title">当前位置.上海 杨浦</view>
+    <view class="all">全部地区</view>
+    <view class="city" wx:for="{{data}}" bindtap="toAciv">{{item.city}}</view>
+</view>

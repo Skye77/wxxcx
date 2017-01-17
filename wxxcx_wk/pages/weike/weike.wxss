@@ -1,0 +1,54 @@
+.weike_body{
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	background-color: #F5F8FA;
+}
+.item{
+	margin-top:10rpx; 
+	background-color: #fff;
+}
+.weikeTime{
+	font-size: 30rpx;
+	color: red;
+	display: block;
+	height: 60rpx;
+	line-height: 60rpx;
+	padding-left: 20rpx;
+}
+.weikeiInfo{
+	display: flex;
+	padding: 20rpx;
+	border-top: 4rpx solid #ccc;
+}
+.weikeImg{
+	width: 160rpx;
+	height:160rpx;
+	margin-right:50rpx;
+}
+.meta{
+	flex:1;
+} 
+.weikeTxt{
+	font-size: 30rpx;
+	color: #757575; 
+}
+.smallPic{
+	height: 44rpx;
+	width: 44rpx;
+	border-radius: 50%;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 20rpx;
+}
+.name,.school{
+	display: inline-block;
+	font-size:30rpx;
+	color: #666; 
+	margin-right: 20rpx;
+}
+.etc{
+	display: inline-block;
+	font-size: 26rpx;
+	color: #ccc;
+}
