@@ -1,0 +1,43 @@
+<view class="login_page">
+	<view class="login_title">
+		<text class="title_we">欢迎来到豆瓣</text>
+	</view>
+	<view class="login_input">
+		<from class="login_from">
+			<input class="lo_input" type="text" placeholder="手机号/邮箱/昵称" bindinput="userNameInput"></input>
+			<input class="lo_input" password type="text" placeholder="密码" bindinput="passWdInput"></input>
+		</from>
+		<button class="denglu" bindtap="tipTapBtn">登录</button>
+	</view>
+	<view class="login_btn register_db">
+		<text class="click_btn ac" bindtap="regiTap">注册豆瓣</text>
+		<text class="click_btn" bindtap="passTap">忘记密码</text>
+	</view>
+	<view class="login_btn weixin_db">
+		<image class="weibo" src="/img/weibo.png"></image>
+		<text class="click_btn weixin_btn" bindtap="weiboTap">微博登录</text>
+		<image class="weibo" src="/img/weixin.png"></image>
+		<text class="click_btn weixin_btn" bindtap="wxLogin">微信登录</text>
+	</view>
+
+	<!--登录信息不完善-->
+    <view class="page_tip" wx:if="{{passW.length == 0}}">
+        <modal title="" confirm-text="确定" cancel-text="取消" hidden="{{tipHidden}}" mask bindconfirm="tipChange" bindcancel="tipChange">
+           <span class="tip_txt">用户名和密码不能为空！</span>
+        </modal>
+    </view>
+    
+    <!-- 登录成功 -->
+    <view class="page_tip" wx:if="{{passW.length!=0}}">
+        <modal title="" confirm-text="确定" cancel-text="取消" hidden="{{tipHidden}}" mask bindconfirm="loginTap" bindcancel="tipChange">
+           <span class="tip_txt">欢迎进入豆瓣电影，确认登录？</span>
+        </modal>
+    </view>
+
+    <!-- 跳转微博提示框 -->
+    <view class="page_tip">
+        <modal title="" confirm-text="确定" cancel-text="取消" hidden="{{weiboHidden}}" mask bindconfirm="weiboChange" bindcancel="weiboChange">
+           <span class="tip_txt">确定用微博账号登录豆瓣电影？</span>
+        </modal>
+    </view>
+</view>

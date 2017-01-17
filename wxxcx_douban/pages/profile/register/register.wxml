@@ -1,0 +1,29 @@
+<view class="login_page">
+	<view class="login_title">
+		<text class="title_we">欢迎加入豆瓣</text>
+	</view>
+	<view class="login_input">
+		<from class="login_from">
+			<input class="lo_input" type="text" placeholder="手机号/邮箱" bindinput="telInput"></input>
+			<input class="lo_input" password type="text" placeholder="密码(最少6位)" bindinput="passWdInput"></input>
+			<input class="lo_input" type="text" placeholder="昵称" bindinput="userNameInput"></input>
+		</from>
+		<button class="denglu" bindtap="tipTapBtn">下一步</button>
+		<text class="res_tip">点击下一步代表你已阅读并同意用户使用协议</text>
+	</view>
+	
+	<!--注册信息不完善-->
+    <view class="page_tip" wx:if="{{telN.length == 0|| passW.length == 0||userN.length == 0}}">
+    <!-- <view class="page_tip"> -->
+        <modal title="" confirm-text="确定" cancel-text="取消" hidden="{{tipHidden}}" mask bindconfirm="tipChange" bindcancel="tipChange">
+           请完善注册信息！
+        </modal>
+    </view>
+    
+    <!-- 注册成功 -->
+    <view class="page_tip" wx:if="{{telN.length != 0 && userN.length!=0 && passW.length!=0}}">
+        <modal title="" confirm-text="确定" cancel-text="取消" hidden="{{tipHidden}}" mask bindconfirm="loginTap" bindcancel="tipChange">
+          恭喜<span class="userN">{{userN}}</span>，注册成功！去登录？
+        </modal>
+    </view>
+</view>

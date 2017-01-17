@@ -1,0 +1,95 @@
+.mine_head{
+	background: #F8F8F8;
+}
+.mine_head_top{
+	display: flex;
+	flex-direction: row;
+	height:240rpx;
+	width: 100%;
+	background:#5CC76D;
+	border-top: 1px solid #398645;
+}
+.proPic{
+	height:164rpx;
+	width:164rpx;
+	border:8rpx solid #fff;
+	border-radius: 50%;
+	margin:30rpx;
+}
+.login{
+	font-size: 44rpx;
+	color: #fff;
+	letter-spacing: 2rpx;
+	font-family: "simsun";
+	margin:auto 0;
+	transform: translateY(-10rpx);
+}
+.mine_head_mid{
+	margin: 24rpx auto;
+	background: #fff;
+	height: 220rpx;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.mid_top{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 110rpx;
+	border-bottom: 2rpx solid #DFDFDF;
+}
+.tipPic{
+	height: 60rpx;
+	width: 60rpx;
+	margin: auto 30rpx; 
+}
+.tip{
+	color: #666;
+	font-size:34rpx;
+}
+.arrow{
+	height: 50rpx;
+	width: 30rpx;
+	position: absolute;
+	right: 20rpx;
+	top:26rpx;
+}
+.tipInfo{
+	display: flex;
+	justify-content: center;
+	line-height: 110rpx;
+	font-size: 36rpx;
+	color: #ccc;
+	letter-spacing: 2rpx;
+}
+.mine_body{
+	flex-direction: row;
+}
+.item{
+	height: 160rpx;
+}
+.itemInfo{
+	width: 25%;
+	height: 100%;
+	text-align: center;
+	line-height: 130rpx;
+}
+.icon{
+	width:60rpx;
+	height: 60rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:0 auto;
+}
+.iconTxt{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30rpx;
+}
+.modal{
+	height: 500rpx;
+	background: yellow;
+}

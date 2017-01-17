@@ -1,0 +1,53 @@
+<view class="mine_head" wx:for="{{head}}">
+	<view class="mine_head_top">
+		<view><image class="proPic" src="{{userInfo.avatarUrl}}" bindtap="modalTap"></image></view>
+		<view class="user_info">
+			<text class="uesr_name" bindtap="modalTap">{{userInfo.nickName}}</text>
+			<text class="user_id">{{item.id}}</text>
+			<view class="user_focus">
+				<text>关注 0　　</text>
+				<text>被关注 1</text>
+			</view>
+		</view>
+		<view class="prolife">
+			<text>个人主页 ></text>
+		</view>
+	</view>
+
+	<view class="mine_head_mid">
+		<view class="mid_top">
+			<image class="tipPic" src="{{item.tipPic}}"></image>
+			<text class="tip">{{item.tip}}</text>
+			<view class="mes">1</view>
+			<image class="arrow" src="{{item.arrow}}"></image>
+		</view>
+		<view class="tipInfo">{{item.info}}</view>
+	</view>
+</view>
+
+<view class="mine_body" wx:for="{{items}}">
+	<view class="item">
+		<view class="itemInfo">
+			<image class="icon" src="{{item.iconPic}}"></image>
+			<text class="iconTxt">{{item.text}}</text>
+		</view>
+		<view class="itemInfo">
+			<image class="icon" src="{{item.iconPic1}}"></image>
+			<text class="iconTxt">{{item.text1}}</text>
+		</view>
+		<view class="itemInfo">
+			<image class="icon" src="{{item.iconPic2}}"></image>
+			<text class="iconTxt">{{item.text2}}</text>
+		</view>
+		<view class="itemInfo">
+			<image class="icon" src="{{item.iconPic3}}"></image>
+			<text class="iconTxt">{{item.text3}}</text>
+		</view>
+	</view>
+</view>
+
+ <view class="page_tip">
+    <modal title="" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" mask bindconfirm="modalClear" bindcancel="modalChange">
+      确定退出微信登录吗？
+    </modal>
+</view>

@@ -1,0 +1,40 @@
+<view class="mine_head" wx:for="{{head}}"  bindtap="modalTap">
+	<view class="mine_head_top">
+		<image class="proPic" src="{{item.pic}}"></image>
+		<text class="login">{{item.text}}</text>
+	</view>
+	<view class="mine_head_mid">
+		<view class="mid_top">
+			<image class="tipPic" src="{{item.tipPic}}"></image>
+			<text class="tip">{{item.tip}}</text>
+			<image class="arrow" src="{{item.arrow}}"></image>
+		</view>
+		<view class="tipInfo">{{item.info}}</view>
+	</view>
+</view>
+<view class="mine_body" wx:for="{{items}}"  bindtap="modalTap">
+	<view class="item">
+		<view class="itemInfo">
+			<image class="icon" src="{{item.iconPic}}"></image>
+			<text class="iconTxt">{{item.text}}</text>
+		</view>
+		<view class="itemInfo">
+			<image class="icon" src="{{item.iconPic1}}"></image>
+			<text class="iconTxt">{{item.text1}}</text>
+		</view>
+		<view class="itemInfo">
+			<image class="icon" src="{{item.iconPic2}}"></image>
+			<text class="iconTxt">{{item.text2}}</text>
+		</view>
+		<view class="itemInfo">
+			<image class="icon" src="{{item.iconPic3}}"></image>
+			<text class="iconTxt">{{item.text3}}</text>
+		</view>
+	</view>
+</view>
+
+<view class="page_tip">
+    <modal title="温馨提示" confirm-text="去登录" cancel-text="暂不登录" hidden="{{modalHidden}}" mask bindconfirm="modalClear" bindcancel="modalChange">
+      登录后才能查看，确定登录吗？
+    </modal>
+</view>

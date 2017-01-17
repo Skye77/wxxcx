@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/movie/movie",
+    "pages/movies/movies",
+    "pages/movies/stars/stars",
+    "pages/movies/Movie-template/Movie-template",
+    "pages/movies/movieList-template/movieList-template",
+    "pages/movies/more-movie/more-movie",
+    "pages/movies/movies-detail/movies-detail",
+    "pages/profile/profile",
+    "pages/profile/login/login",
+    "pages/profile/register/register",
+    "pages/profile/password/password",
+    "pages/profile/accountLogin/accountLogin",
+    "pages/profile/weixinLogin/weixinLogin"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "豆瓣电影",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "color":"#ccc",
+    "list":[
+      {
+        "text":"推荐电影",
+        "iconPath":"img/shouye.png",
+        "selectedIconPath":"img/shouye_ac.png",
+        "pagePath":"pages/index/index"
+      },{
+        "text":"搜索",
+        "iconPath":"img/search.png",
+        "selectedIconPath":"img/search_ac.png",
+        "pagePath":"pages/movies/movies"
+      },{
+        "text":"我的",
+        "iconPath":"img/profile.png",
+        "selectedIconPath":"img/profile_ac.png",
+        "pagePath":"pages/profile/profile"
+      }
+    ]
+  }
+}

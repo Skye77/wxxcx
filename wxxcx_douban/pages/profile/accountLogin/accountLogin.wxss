@@ -1,0 +1,136 @@
+.mine_head{
+	background: #F8F8F8;
+}
+.mine_head_top{
+	display: flex;
+	flex-direction: row;
+	flex: 1;
+	height:240rpx;
+	width: 100%;
+	background:#F89D4C;
+	border-top: 1px solid #398645;
+}
+.proPic{
+	height:164rpx;
+	width:164rpx;
+	border:8rpx solid #fff;
+	border-radius: 50%;
+	margin:30rpx;
+}
+.user_info{
+	display: flex;
+	flex-direction: column;
+	width:40%;
+}
+.uesr_name{
+	display:block;
+	font-size: 40rpx;
+	height: 60rpx;
+	margin-top:30rpx;
+	line-height: 60rpx;
+	color:#fff;
+	font-family: "Microsoft YaHei";
+}
+.user_id{
+	display:block;
+	font-size: 28rpx;
+	color: #fff;
+	height: 50rpx;
+	line-height: 50rpx;
+	margin-bottom: 30rpx;
+}
+.user_focus{
+	display: flex;
+	flex-direction: row;
+	font-size: 28rpx;
+	color: #fff;
+}
+.prolife{
+	display: flex;
+	/*align-content: center;*/
+	font-size:36rpx;
+	color: #fff;
+	line-height: 240rpx;
+}
+.mine_head_mid{
+	margin: 24rpx auto;
+	background: #fff;
+	height: 220rpx;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.mid_top{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 110rpx;
+	border-bottom: 2rpx solid #DFDFDF;
+}
+.tipPic{
+	height: 60rpx;
+	width: 60rpx;
+	margin: auto 30rpx; 
+}
+.tip{
+	color: #666;
+	font-size:34rpx;
+}
+.mes{
+	height: 50rpx;
+	width: 50rpx;
+	background:#FA4255;
+	color: #fff;
+	line-height: 50rpx;
+	text-align: center;
+	border-radius: 50%;
+	position: absolute;
+	right: 60rpx;
+	font-size: 30rpx;
+	top:30rpx;
+}
+.arrow{
+	height: 50rpx;
+	width: 30rpx;
+	position: absolute;
+	right: 20rpx;
+	top:30rpx;
+}
+.tipInfo{
+	display: flex;
+	justify-content: center;
+	line-height: 110rpx;
+	font-size: 28rpx;
+	color: #ccc;
+	letter-spacing: 2rpx;
+}
+.mine_body{
+	flex-direction: row;
+}
+.item{
+	height: 160rpx;
+}
+.itemInfo{
+	width: 25%;
+	height: 100%;
+	text-align: center;
+	line-height: 130rpx;
+}
+.icon{
+	width:60rpx;
+	height: 60rpx;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:0 auto;
+}
+.iconTxt{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30rpx;
+}
+.modal{
+	height: 500rpx;
+	background: yellow;
+}

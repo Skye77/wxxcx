@@ -1,0 +1,32 @@
+.meta{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	height: 1000rpx;
+	padding: 50rpx 40rpx;
+}
+.poster{
+	width: 80%;
+	height: 80%;
+	margin:20rpx auto;
+}
+.title{
+	font-size: 32rpx;
+	padding: 20rpx;
+}
+.info{
+	font-size: 30rpx;
+	padding: 10rpx;
+}
+.summary{
+	width: 80%;
+	margin:30rpx auto;
+}
+.label{
+	display: block;
+}
+.content{
+	color: #666;
+	font-size: 20rpx;
+	padding: 10rpx;
+}
